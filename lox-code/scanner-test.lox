@@ -1,0 +1,11 @@
+class LoxScannerTest {
+    fun init() {
+        this.numericValue = -456.985
+
+        // This breaks the scanner: String -> ID -> ID -> EMPTY_STR
+        // this.string = "hello this is a string literal with a "nested quote""
+        while (true) {
+            this.numericValue = this.numericValue + 100
+        }
+    }
+}
